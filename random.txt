@@ -4,8 +4,8 @@ mongodb{
     database navn
         myFirstDatabase.Answers
     database user
-        username = username
-        password = wrok2e5KRS1DRIcn
+        username = test$
+        password = test
 }
 
 heroku{
@@ -31,3 +31,22 @@ ssh-key til git{
 git{ 
     https://github.com/Toooody/Heroku-test
 }
+
+VIDEOER{
+    heroku{
+        https://www.youtube.com/watch?v=r2S89Hm1Uq0&ab_channel=Raddy
+    }
+    mongodb indsæt{
+        https://www.youtube.com/watch?v=KucNBOaosEA&ab_channel=h3ckPh4se
+    }
+
+
+
+}
+
+
+
+
+
+
+
