@@ -1,0 +1,33 @@
+TING DER SKAL GEMMES ELLER HUSKES:
+
+mongodb{
+    database navn
+        myFirstDatabase.Answers
+    database user
+        username = username
+        password = wrok2e5KRS1DRIcn
+}
+
+heroku{
+    Tobias.c.h@hotmail.com (vi skal have en fælles)
+    app navn
+        roomscape-test
+
+}
+
+push til heroku{
+    $ git add .
+    $ git commit -am "make it better"
+    $ git push heroku master (brug måske kun "git push heroku")
+}
+
+ssh-key til git{
+    $ ssh-keygen
+    kopier adresse /bruger/ssh (sådan noget)
+    $ cat paste
+    git -> settings -> deploy keys -> add deploy key (husk allow write access)
+}
+
+git{ 
+    https://github.com/Toooody/Heroku-test
+}
