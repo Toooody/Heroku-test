@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head') %>
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <%- include('../partials/navbar') %>
+
+        <!-- Showcase -->
+        <section
+            class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+        >
+            <div class="container">
+                <div
+                    class="d-sm-flex align-items-center justify-content-between"
+                >
+                    <div>
+                        <h1>
+                            Find the most
+                            <span class="text-warning">COMPATIBLE</span>
+                            roommate for You!
+                        </h1>
+                        <p class="lead my-4">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Sequi laboriosam expedita id doloribus et
+                            officia!
+                        </p>
+                        <a href="#questionnaire" class="btn btn-primary btn-lg">Get started!</a>
+                    </div>
+                    <img
+                        class="img-fluid w-100 d-none d-sm-block"
+                        src="/images/searching.svg"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="bg-primary text-light p-4">
+            <div class="container">
+                <div
+                    class="d-md-flex justify-content-between align-items-center"
+                >
+                    <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
+
+                    <div class="input-group news-input">
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Enter Email"
+                        />
+                        <button class="btn btn-dark btn-lg" type="button">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section id="howitworks" class="p-5">
+            <div class="container">
+                <div
+                    class="row align-items-center justify-content-between"
+                >
+                <div class="col-md">
+                    <img src="/images/howitworks_1.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>How it Works</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iste suscipit ea neque quas odit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, eveniet? Numquam, natus cumque animi eveniet, ipsa voluptas distinctio voluptatem rerum nisi, optio alias? Modi quibusdam voluptate beatae officiis doloremque. Animi.</p>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="howitworks" class="p-5">
+            <div class="container">
+                <div
+                    class="row align-items-center justify-content-between"
+                >
+                <div class="col-md p-5">
+                    <h2>How it Works</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iste suscipit ea neque quas odit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, eveniet? Numquam, natus cumque animi eveniet, ipsa voluptas distinctio voluptatem rerum nisi, optio alias? Modi quibusdam voluptate beatae officiis doloremque. Animi.</p>
+                    
+                </div>
+                <div class="col-md">
+                    <img src="/images/howitworks_2.svg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </section> 
+
+        <section id="howitworks" class="p-5">
+            <div class="container">
+                <div
+                    class="row align-items-center justify-content-between"
+                >
+                <div class="col-md">
+                    <img src="/images/howitworks_3.svg" class="img-fluid w-50" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>How it Works</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iste suscipit ea neque quas odit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, eveniet? Numquam, natus cumque animi eveniet, ipsa voluptas distinctio voluptatem rerum nisi, optio alias? Modi quibusdam voluptate beatae officiis doloremque. Animi.</p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Questionnaire -->
+       
+        <section
+            id="questionnaire"
+            class="bg-dark text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+        >
+        <h1 class="text-center mb-4 mt-5 text-light">Questionnaire</h1>
+        <form id="survey-form" data-multi-step class="multi-step-form" action="/results" method="POST">
+            <div class="mb-5 card-step" data-step>
+                <h3 class="step-title">Personal Information</h3>
+               
+                <div class="form-group">
+                    <label for="firstName" id="firstNameLabel">First Name</label>
+                    <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Jens"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName" id="lastNameLabel">Last Name</label>
+                    <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Jensen"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select class="form-control" name="gender" id="gender">
+                        <option selected>Select gender.</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com"/>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <select class="form-select" name="age" id="age">
+                        <option selected>Select your age.</option>
+                        <option value="1">18-21</option>
+                        <option value="2">22-25</option>
+                        <option value="3">26-30+</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="major">What Major are you studying?</label>
+                    <select class="form-select" id="major" name="major">
+                        <option>Select major.</option>
+                        <option value="AF">Anvendt filosofi</option>
+                        <option value="AX">Arkitektur og design</option>
+                        <option value="AL">Biologi</option>
+                        <option value="AL">Bioteknologi</option>
+                        <option value="AL">By-, energi- og miljøplanlægning</option>
+                        <option value="AL">Byggeri og anlæg, Diplomingeniør</option>
+                        <option value="AL">Bæredygtig energiteknik, Diplomingeniør</option>
+                        <option value="AL">Computerteknologi</option>
+                        <option value="AL">Dansk</option>
+                        <option value="AL">Datalogi</option>
+                        <option value="AL">Datavidenskab og machine learning</option>
+                        <option value="AL">Elektronik og systemdesign</option>
+                        <option value="AL">Elektronik, Diplomingeniør</option>
+                        <option value="AL">Energi</option>
+                        <option value="AL">Engelsk</option>
+                        <option value="AL">Erhvevsøkonomi</option>
+                        <option value="AL">Erhvevsøkonomi-jura (HA (JUR.))</option>
+                        <option value="AL">Fysik</option>
+                        <option value="AL">Geografi</option>
+                        <option value="AL">Globale forretningssystemer, Diplomingeniør</option>
+                        <option value="AL">Historie</option>
+                        <option value="AL">Idræt</option>
+                        <option value="AL">Informationsteknologi</option>
+                        <option value="AL">Ingeniørvidenskab</option>
+                        <option value="AL">Innovation og digitalisering</option>
+                        <option value="AL">Interaktionsdesign</option>
+                        <option value="AL">International virksomhedskommunikation, engelsk</option>
+                        <option value="AL">Jura</option>
+                        <option value="AL">Kemi</option>
+                        <option value="AL">Kemi og Bioteknologi, Diplomingeniør</option>
+                        <option value="AL">Kemiteknologi</option>
+                        <option value="AL">Kommunikation og digitale medier</option>
+                        <option value="AL">Kunst og teknologi</option>
+                        <option value="AL">Landindspektørvidenskab</option>
+                        <option value="AL">Maskinteknik, Diplomingeniør</option>
+                        <option value="AL">Matematik</option>
+                        <option value="AL">Matematik-teknologi</option>
+                        <option value="AL">Matematik-økonomi</option>
+                        <option value="AL">Medialogi</option>
+                        <option value="AL">Medicin</option>
+                        <option value="AL">Medicin med industriel specialisering</option>
+                        <option value="AL">Mekanik og produktion</option>
+                        <option value="AL">Miljøvidenskab</option>
+                        <option value="AL">Musik</option>
+                        <option value="AL">Musikterapi</option>
+                        <option value="AL">Nanoteknologi</option>
+                        <option value="AL">Organisatorisk læring</option>
+                        <option value="AL">Politik og adminstration</option>
+                        <option value="AL">Psykologi</option>
+                        <option value="AL">Robotteknologi</option>
+                        <option value="AL">Samfundsfag</option>
+                        <option value="AL">Socialrådgiver</option>
+                        <option value="AL">Sociologi</option>
+                        <option value="AL">Software</option>
+                        <option value="AL">Sprog og internationale studier, engelsk</option>
+                        <option value="AL">Sprog og internationale studier, spansk</option>
+                        <option value="AL">Sundhedsteknologi</option>
+                        <option value="AL">Teknoantropologi</option>
+                        <option value="AL">Økonomi</option>
+                    </select>
+                </div>
+
+                <div class="mb-3 form-group">
+                    <label for="semester" class="form-label">What semester are you on?</label>
+                    <input type="number" class="form-control" name="semester" id="semester" min="1" max="10" placeholder="Semester currently studying"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="preferStudy">Nationality</label>
+                    <select class="form-select" id="roommateLanguage" name="roommateLanguage">
+                        <option>Select nationality.</option>
+                        <option value="AF">Afghanistan</option>
+                        <option value="AX">Aland Islands</option>
+                        <option value="AL">Albania</option>
+                        <option value="DZ">Algeria</option>
+                        <option value="AS">American Samoa</option>
+                        <option value="AD">Andorra</option>
+                        <option value="AO">Angola</option>
+                        <option value="AI">Anguilla</option>
+                        <option value="AQ">Antarctica</option>
+                        <option value="AG">Antigua and Barbuda</option>
+                        <option value="AR">Argentina</option>
+                        <option value="AM">Armenia</option>
+                        <option value="AW">Aruba</option>
+                        <option value="AU">Australia</option>
+                        <option value="AT">Austria</option>
+                        <option value="AZ">Azerbaijan</option>
+                        <option value="BS">Bahamas</option>
+                        <option value="BH">Bahrain</option>
+                        <option value="BD">Bangladesh</option>
+                        <option value="BB">Barbados</option>
+                        <option value="BY">Belarus</option>
+                        <option value="BE">Belgium</option>
+                        <option value="BZ">Belize</option>
+                        <option value="BJ">Benin</option>
+                        <option value="BM">Bermuda</option>
+                        <option value="BT">Bhutan</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                        <option value="BA">Bosnia and Herzegovina</option>
+                        <option value="BW">Botswana</option>
+                        <option value="BV">Bouvet Island</option>
+                        <option value="BR">Brazil</option>
+                        <option value="IO">British Indian Ocean Territory</option>
+                        <option value="BN">Brunei Darussalam</option>
+                        <option value="BG">Bulgaria</option>
+                        <option value="BF">Burkina Faso</option>
+                        <option value="BI">Burundi</option>
+                        <option value="KH">Cambodia</option>
+                        <option value="CM">Cameroon</option>
+                        <option value="CA">Canada</option>
+                        <option value="CV">Cape Verde</option>
+                        <option value="KY">Cayman Islands</option>
+                        <option value="CF">Central African Republic</option>
+                        <option value="TD">Chad</option>
+                        <option value="CL">Chile</option>
+                        <option value="CN">China</option>
+                        <option value="CX">Christmas Island</option>
+                        <option value="CC">Cocos (Keeling) Islands</option>
+                        <option value="CO">Colombia</option>
+                        <option value="KM">Comoros</option>
+                        <option value="CG">Congo</option>
+                        <option value="CD">Congo, Democratic Republic of the Congo</option>
+                        <option value="CK">Cook Islands</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="CI">Cote D'Ivoire</option>
+                        <option value="HR">Croatia</option>
+                        <option value="CU">Cuba</option>
+                        <option value="CW">Curacao</option>
+                        <option value="CY">Cyprus</option>
+                        <option value="CZ">Czech Republic</option>
+                        <option value="DK">Denmark</option>
+                        <option value="DJ">Djibouti</option>
+                        <option value="DM">Dominica</option>
+                        <option value="DO">Dominican Republic</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="EG">Egypt</option>
+                        <option value="SV">El Salvador</option>
+                        <option value="GQ">Equatorial Guinea</option>
+                        <option value="ER">Eritrea</option>
+                        <option value="EE">Estonia</option>
+                        <option value="ET">Ethiopia</option>
+                        <option value="FK">Falkland Islands (Malvinas)</option>
+                        <option value="FO">Faroe Islands</option>
+                        <option value="FJ">Fiji</option>
+                        <option value="FI">Finland</option>
+                        <option value="FR">France</option>
+                        <option value="GF">French Guiana</option>
+                        <option value="PF">French Polynesia</option>
+                        <option value="TF">French Southern Territories</option>
+                        <option value="GA">Gabon</option>
+                        <option value="GM">Gambia</option>
+                        <option value="GE">Georgia</option>
+                        <option value="DE">Germany</option>
+                        <option value="GH">Ghana</option>
+                        <option value="GI">Gibraltar</option>
+                        <option value="GR">Greece</option>
+                        <option value="GL">Greenland</option>
+                        <option value="GD">Grenada</option>
+                        <option value="GP">Guadeloupe</option>
+                        <option value="GU">Guam</option>
+                        <option value="GT">Guatemala</option>
+                        <option value="GG">Guernsey</option>
+                        <option value="GN">Guinea</option>
+                        <option value="GW">Guinea-Bissau</option>
+                        <option value="GY">Guyana</option>
+                        <option value="HT">Haiti</option>
+                        <option value="HM">Heard Island and Mcdonald Islands</option>
+                        <option value="VA">Holy See (Vatican City State)</option>
+                        <option value="HN">Honduras</option>
+                        <option value="HK">Hong Kong</option>
+                        <option value="HU">Hungary</option>
+                        <option value="IS">Iceland</option>
+                        <option value="IN">India</option>
+                        <option value="ID">Indonesia</option>
+                        <option value="IR">Iran, Islamic Republic of</option>
+                        <option value="IQ">Iraq</option>
+                        <option value="IE">Ireland</option>
+                        <option value="IM">Isle of Man</option>
+                        <option value="IL">Israel</option>
+                        <option value="IT">Italy</option>
+                        <option value="JM">Jamaica</option>
+                        <option value="JP">Japan</option>
+                        <option value="JE">Jersey</option>
+                        <option value="JO">Jordan</option>
+                        <option value="KZ">Kazakhstan</option>
+                        <option value="KE">Kenya</option>
+                        <option value="KI">Kiribati</option>
+                        <option value="KP">Korea, Democratic People's Republic of</option>
+                        <option value="KR">Korea, Republic of</option>
+                        <option value="XK">Kosovo</option>
+                        <option value="KW">Kuwait</option>
+                        <option value="KG">Kyrgyzstan</option>
+                        <option value="LA">Lao People's Democratic Republic</option>
+                        <option value="LV">Latvia</option>
+                        <option value="LB">Lebanon</option>
+                        <option value="LS">Lesotho</option>
+                        <option value="LR">Liberia</option>
+                        <option value="LY">Libyan Arab Jamahiriya</option>
+                        <option value="LI">Liechtenstein</option>
+                        <option value="LT">Lithuania</option>
+                        <option value="LU">Luxembourg</option>
+                        <option value="MO">Macao</option>
+                        <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+                        <option value="MG">Madagascar</option>
+                        <option value="MW">Malawi</option>
+                        <option value="MY">Malaysia</option>
+                        <option value="MV">Maldives</option>
+                        <option value="ML">Mali</option>
+                        <option value="MT">Malta</option>
+                        <option value="MH">Marshall Islands</option>
+                        <option value="MQ">Martinique</option>
+                        <option value="MR">Mauritania</option>
+                        <option value="MU">Mauritius</option>
+                        <option value="YT">Mayotte</option>
+                        <option value="MX">Mexico</option>
+                        <option value="FM">Micronesia, Federated States of</option>
+                        <option value="MD">Moldova, Republic of</option>
+                        <option value="MC">Monaco</option>
+                        <option value="MN">Mongolia</option>
+                        <option value="ME">Montenegro</option>
+                        <option value="MS">Montserrat</option>
+                        <option value="MA">Morocco</option>
+                        <option value="MZ">Mozambique</option>
+                        <option value="MM">Myanmar</option>
+                        <option value="NA">Namibia</option>
+                        <option value="NR">Nauru</option>
+                        <option value="NP">Nepal</option>
+                        <option value="NL">Netherlands</option>
+                        <option value="AN">Netherlands Antilles</option>
+                        <option value="NC">New Caledonia</option>
+                        <option value="NZ">New Zealand</option>
+                        <option value="NI">Nicaragua</option>
+                        <option value="NE">Niger</option>
+                        <option value="NG">Nigeria</option>
+                        <option value="NU">Niue</option>
+                        <option value="NF">Norfolk Island</option>
+                        <option value="MP">Northern Mariana Islands</option>
+                        <option value="NO">Norway</option>
+                        <option value="OM">Oman</option>
+                        <option value="PK">Pakistan</option>
+                        <option value="PW">Palau</option>
+                        <option value="PS">Palestinian Territory, Occupied</option>
+                        <option value="PA">Panama</option>
+                        <option value="PG">Papua New Guinea</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Peru</option>
+                        <option value="PH">Philippines</option>
+                        <option value="PN">Pitcairn</option>
+                        <option value="PL">Poland</option>
+                        <option value="PT">Portugal</option>
+                        <option value="PR">Puerto Rico</option>
+                        <option value="QA">Qatar</option>
+                        <option value="RE">Reunion</option>
+                        <option value="RO">Romania</option>
+                        <option value="RU">Russian Federation</option>
+                        <option value="RW">Rwanda</option>
+                        <option value="BL">Saint Barthelemy</option>
+                        <option value="SH">Saint Helena</option>
+                        <option value="KN">Saint Kitts and Nevis</option>
+                        <option value="LC">Saint Lucia</option>
+                        <option value="MF">Saint Martin</option>
+                        <option value="PM">Saint Pierre and Miquelon</option>
+                        <option value="VC">Saint Vincent and the Grenadines</option>
+                        <option value="WS">Samoa</option>
+                        <option value="SM">San Marino</option>
+                        <option value="ST">Sao Tome and Principe</option>
+                        <option value="SA">Saudi Arabia</option>
+                        <option value="SN">Senegal</option>
+                        <option value="RS">Serbia</option>
+                        <option value="CS">Serbia and Montenegro</option>
+                        <option value="SC">Seychelles</option>
+                        <option value="SL">Sierra Leone</option>
+                        <option value="SG">Singapore</option>
+                        <option value="SX">Sint Maarten</option>
+                        <option value="SK">Slovakia</option>
+                        <option value="SI">Slovenia</option>
+                        <option value="SB">Solomon Islands</option>
+                        <option value="SO">Somalia</option>
+                        <option value="ZA">South Africa</option>
+                        <option value="GS">South Georgia and the South Sandwich Islands</option>
+                        <option value="SS">South Sudan</option>
+                        <option value="ES">Spain</option>
+                        <option value="LK">Sri Lanka</option>
+                        <option value="SD">Sudan</option>
+                        <option value="SR">Suriname</option>
+                        <option value="SJ">Svalbard and Jan Mayen</option>
+                        <option value="SZ">Swaziland</option>
+                        <option value="SE">Sweden</option>
+                        <option value="CH">Switzerland</option>
+                        <option value="SY">Syrian Arab Republic</option>
+                        <option value="TW">Taiwan, Province of China</option>
+                        <option value="TJ">Tajikistan</option>
+                        <option value="TZ">Tanzania, United Republic of</option>
+                        <option value="TH">Thailand</option>
+                        <option value="TL">Timor-Leste</option>
+                        <option value="TG">Togo</option>
+                        <option value="TK">Tokelau</option>
+                        <option value="TO">Tonga</option>
+                        <option value="TT">Trinidad and Tobago</option>
+                        <option value="TN">Tunisia</option>
+                        <option value="TR">Turkey</option>
+                        <option value="TM">Turkmenistan</option>
+                        <option value="TC">Turks and Caicos Islands</option>
+                        <option value="TV">Tuvalu</option>
+                        <option value="UG">Uganda</option>
+                        <option value="UA">Ukraine</option>
+                        <option value="AE">United Arab Emirates</option>
+                        <option value="GB">United Kingdom</option>
+                        <option value="US">United States</option>
+                        <option value="UM">United States Minor Outlying Islands</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="UZ">Uzbekistan</option>
+                        <option value="VU">Vanuatu</option>
+                        <option value="VE">Venezuela</option>
+                        <option value="VN">Viet Nam</option>
+                        <option value="VG">Virgin Islands, British</option>
+                        <option value="VI">Virgin Islands, U.s.</option>
+                        <option value="WF">Wallis and Futuna</option>
+                        <option value="EH">Western Sahara</option>
+                        <option value="YE">Yemen</option>
+                        <option value="ZM">Zambia</option>
+                        <option value="ZW">Zimbabwe</option>
+                    </select>
+                </div>
+
+                <button type="button" class="btn btn-primary" data-next>Next</button>
+            </div>
+
+            <div class="mb-5 card-step" data-step>
+                <h3 class="step-title">Dormitory Roommate 1/2</h3>
+                
+                <div class="form-group">
+                    <label for="planVisitorsRoommate">How often would you prefer your roommate having visitors over?</label>
+                    <select class="form-select" name="planVisitorsRoommate" id="planVisitorsRoommate">
+                        <option selected>Select how often.</option>
+                        <option value="1">Every day</option>
+                        <option value="2">A few times a week</option>
+                        <option value="3">Once a week</option>
+                        <option value="4">Once a month</option>
+                        <option value="5">Never</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="planVisitors">How often do you plan on having visitors over?</label>
+                    <select class="form-select" name="planVisitors" id="planVisitors">
+                        <option selected>Select how often.</option>
+                        <option value="1">Every day</option>
+                        <option value="2">A few times a week</option>
+                        <option value="3">Once a week</option>
+                        <option value="4">Once a month</option>
+                        <option value="5">Never</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="preferStudy">How do you prefer to study?</label>
+                    <select class="form-select" name="preferStudy" id="preferStudy">
+                        <option selected>Select how you prefer to study.</option>
+                        <option value="1">With people</option>
+                        <option value="2">In private</option>
+                        <option value="3">With noise</option>
+                        <option value="4">With little distraction</option>
+                        <option value="5">Not sure</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="bedtime">When do you typically go to bed?</label>
+                    <select class="form-select" name="bedtime" id="bedtime">
+                        <option selected>Select when you typically go to bed.</option>
+                        <option value="1">Before 9. PM</option>
+                        <option value="2">Before 12. AM</option>
+                        <option value="3">After 12. AM</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="roommateGender">What gender roommate would you prefer?</label>
+                    <select class="form-select" name="roommateGender" id="roommateGender">
+                        <option selected>Select preferred gender.</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Does not matter</option>
+                    </select>
+                </div>
+
+                <div class="mb-3 form-group">
+                    <label for="">Do you prefer your roommate to be the same nationality as you?</label>
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="preferInternational" id="Yes" value="Yes" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="Yes">Yes</label>
+                      
+                        <input type="radio" class="btn-check" name="preferInternational" id="No" value="No" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="No">No</label>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-secondary" data-previous>Previous</button>
+                <button type="button" class="btn btn-primary" data-next>Next</button>
+            </div>
+
+            <div class="mb-5 card-step" data-step>
+                <h3 class="step-title">Dormitory Roommate 2/2</h3>
+                <div class="form-group">
+                    <label for="preferredAgeRange">What age range do you prefer your roommate to be?</label>
+                    <select class="form-select" name="preferredAgeRange" id="preferredAgeRange">
+                        <option selected>Select age range.</option>
+                        <option value="1">18-21</option>
+                        <option value="2">22-25</option>
+                        <option value="3">26-30+</option>
+                        <option value="4">Does not matter</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="smoker">Are you a smoker?</label>
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="btnradio4" id="smokerYes" value="smokerYes" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="smokerYes">Yes</label>
+                      
+                        <input type="radio" class="btn-check" name="btnradio4" id="smokerNo" value="smokerNo" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="smokerNo">No</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="btnradio5">Do you prefer your roommate to have the same major as you?</label>
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="roommateMajor" id="Yes" value="Yes" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="Yes">Yes</label>
+                      
+                        <input type="radio" class="btn-check" name="roommateMajor" id="No" value="No" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="No">No</label>
+                    </div>
+                </div>
+
+                <div class="mb-3 form-group">
+                    <label for="btnradio8">Do you prefer your roommate to be on the same semester as you?</label>
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="roommateSemester" id="Yes" value="Yes" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="Yes">Yes</label>
+                      
+                        <input type="radio" class="btn-check" name="roommateSemester" id="No" value="No" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="No">No</label>
+                    </div>
+                    <div id="typeHelp" class="form-text">This cannot be guaranteed.</div>
+                </div>
+                <button type="button" class="btn btn-secondary" data-previous>Previous</button>
+                <button type="button" class="btn btn-primary" data-next>Next</button>
+            </div>
+
+            <div class="mb-5 card-step" data-step>
+                <h3 class="step-title">Information about the dormitory</h3>
+                <div class="form-group">
+                    <label for="budget">Budget</label>
+                    <select class="form-select" name="budget" id="budget">
+                        <option selected>Select your maximum budget.</option>
+                        <option value="1"><2000 DKK</option>
+                        <option value="2"><3000 DKK</option>
+                        <option value="3"><4000 DKK</option>
+                        <option value="3"><5000 DKK</option>
+                        <option value="3"><6000 DKK</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="btnradio7">Do you require the dormitory to be handicap friendly?</label>
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="btnradio7" id="handicapFriendlyYes" value="handicapFriendlyYes" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="handicapFriendlyYes">Yes</label>
+                      
+                        <input type="radio" class="btn-check" name="btnradio7" id="handicapFriendlyNo" value="handicapFriendlyNo" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="handicapFriendlyNo">No</label>
+                    </div>
+                </div>
+                <div class="mb-3 form-group">
+                    <label class="mb-2" for="aalborgSection">Which section of Aalborg do you wish to live in?</label>
+                    <div class="btn-group" role="group" name="aalborgSection" id="aalborgSection">
+                        <input type="checkbox" class="btn-check" name="aalborgSection" id="sectionAalborgC" value="sectionAalborgC" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="sectionAalborgC">9000 - Aalborg Central</label>
+                      
+                        <input type="checkbox" class="btn-check" name="aalborgSection" id="sectionAalborgSW" value="sectionAalborgSW" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="sectionAalborgSW">9200 - Aalborg South West</label>
+                        
+                        <input type="checkbox" class="btn-check" name="aalborgSection" id="sectionAalborgSE" value="sectionAalborgSE" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="sectionAalborgSE">9210 - Aalborg South East</label>
+                        
+                        <input type="checkbox" class="btn-check" name="aalborgSection" id="sectionAalborgE" value="sectionAalborgE" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="sectionAalborgE">9220 - Aalborg East</label>
+                      </div>
+                    <div id="typeHelp" class="form-text">You can select multiple.</div>
+                </div>
+                <button type="button" class="btn btn-secondary" data-previous>Previous</button>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+               
+        </form>
+        </section>
+
+        <!-- Question Accordion -->
+
+        <section id="questions" class="p-5">
+            <div class="container">  
+                <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+                <div class="accordion accordion-flush" id="questions">
+                    <!-- Item 1 -->
+                    <div class="accordion-item"> 
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+                          Can we guarantee a spot at a dormitory?
+                        </button>
+                      </h2>
+                      <div id="question-one" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                        <div class="accordion-body">The short answer is, no. As we...</div>
+                      </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+                            How much does it cost?
+                          </button>
+                        </h2>
+                        <div id="question-two" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda soluta officiis omnis dolorum fugiat itaque. Quibusdam vero id atque cumque hic debitis quia suscipit! Eveniet porro, ullam corrupti expedita, voluptates exercitationem nostrum fugiat, perspiciatis alias incidunt provident? Possimus quidem reprehenderit qui dolorum accusamus eligendi distinctio a sunt est repellendus.</div>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+                            How do I get my answer?
+                          </button>
+                        </h2>
+                        <div id="question-three" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda soluta officiis omnis dolorum fugiat itaque. Quibusdam vero id atque cumque hic debitis quia suscipit! Eveniet porro, ullam corrupti expedita, voluptates exercitationem nostrum fugiat, perspiciatis alias incidunt provident? Possimus quidem reprehenderit qui dolorum accusamus eligendi distinctio a sunt est repellendus.</div>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+                            FAQ 4
+                          </button>
+                        </h2>
+                        <div id="question-four" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda soluta officiis omnis dolorum fugiat itaque. Quibusdam vero id atque cumque hic debitis quia suscipit! Eveniet porro, ullam corrupti expedita, voluptates exercitationem nostrum fugiat, perspiciatis alias incidunt provident? Possimus quidem reprehenderit qui dolorum accusamus eligendi distinctio a sunt est repellendus.</div>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five">
+                            FAQ 5
+                          </button>
+                        </h2>
+                        <div id="question-five" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda soluta officiis omnis dolorum fugiat itaque. Quibusdam vero id atque cumque hic debitis quia suscipit! Eveniet porro, ullam corrupti expedita, voluptates exercitationem nostrum fugiat, perspiciatis alias incidunt provident? Possimus quidem reprehenderit qui dolorum accusamus eligendi distinctio a sunt est repellendus.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About us -->
+        <section id="aboutus" class="p-5 bg-primary">
+            <div class="container">
+                <h2 class="text-center text-white">About Us</h2>
+                <p class="lead text-center text-white mb-5">Group A218a</p>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle mb-3" alt="">
+                                <h3 class="card-title mb-3">Banafsheh Nourizadehbarabi</h3>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil odio nobis nam ea, omnis officia.</p>
+                                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="/images/Thomas_billede.jpg" class="rounded-circle mb-3" alt="" height="130">
+                                <h3 class="card-title mb-3">Thomas Bjeldbak Madsen</h3>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil odio nobis nam ea, omnis officia.</p>
+                                <a href="https://twitter.com/ThomasBjeldbakM"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                <a href="https://www.linkedin.com/in/thomasbjeldbakmadsen/"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                <a href="https://www.instagram.com/eshes1509/"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="https://randomuser.me/api/portraits/men/18.jpg" class="rounded-circle mb-3" alt="">
+                                <h3 class="card-title mb-3">Tobias Christian Hansen</h3>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil odio nobis nam ea, omnis officia.</p>
+                                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                     
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Map -->
+        <section class="p-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md">
+                        <h2 class="text-center mb-4">Contact Us</h2>
+                        <ul class="list-group list-group-flush lead">
+                            <li class="list-group-item">
+                                <span class="fw-bold">Main Location:</span> Badehus Vej 5, Aalborg 9000
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Phone:</span> XXXXXXXX
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Email:</span> fs-21-sw-2-a218b@student.aau.dk
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md">
+                        <img src="/images/contact.svg" class="img-fluid w-50 d-none d-sm-block"" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <%- include('../partials/footer') %>
+
+        <!-- JavaScript -->
+        <%- include('../partials/script') %>
+
+        <script>
+            document.getElementById('survey-form').reset()
+        </script>
+
+    </body>
+</html>
